@@ -35,7 +35,7 @@ body {
 
 .container {
     width: 100%;
-    padding: 0 21rem;
+    padding: 0 13rem;
 }
 
 section {
@@ -135,7 +135,7 @@ nav {
     transition: var(--transtion);
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     color: var(--bs-green);
 }
 
@@ -156,8 +156,8 @@ nav {
 
 /* ? Media Queries start */
 
-@media screen and (max-width:1425px){
-    .container {
+@media screen and (max-width:1425px) {
+    .header.container {
         padding: 0;
     }
 
@@ -204,17 +204,17 @@ nav {
         cursor: pointer;
     }
 
-    .button .btn{
+    nav .btn {
         display: none;
     }
 }
 
 @media screen and (max-width:900px) {
-    .container {
+    .header.container {
         padding: 0;
     }
 
-    nav{
+    nav {
         border-bottom: none;
     }
 
@@ -262,7 +262,7 @@ nav {
         cursor: pointer;
     }
 
-    .button .btn{
+    .button .nav.btn {
         display: none;
     }
 }
@@ -275,14 +275,124 @@ nav {
 
 /* ! Home start*/
 
-.home{
+.home {
     padding-top: 14rem;
 }
 
-.wrapper{
-    display: flex;
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+}
+
+.content-text {
+    margin-top: 12rem;
+}
+
+.content-text span {
+    color: var(--bs-green);
+    font-size: 1.8rem;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+
+.content-text h1 {
+    color: var(--bs-white);
+    font-size: 4.2rem;
+    line-height: 65px;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+
+.entry {
+    padding: 0 6.2rem;
+}
+
+.content-text p {
+    color: var(--bs-white);
+    margin: 5px 0 15px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
 }
 
 
+
+.content-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* ? Media Queries start */
+
+@media screen and (min-width:1800px) {
+
+    .home {
+        padding-top: 14rem !important;
+    }
+
+    .container {
+        padding: 0 19rem;
+    }
+
+
+}
+
+@media screen and (max-width:1425px){
+    .home{
+       padding-top: 1rem; 
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .entry {
+        padding: 0;
+    }
+
+    
+}
+
+@media screen and (max-width:900px) {
+
+    .home {
+        padding: 1rem 2rem;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .content-text h1 {
+        font-size: 3rem;
+        line-height: normal;
+    }
+
+    .content-text span {
+        font-size: 1.6rem;
+    }
+
+    .entry {
+        padding: 0;
+    }
+
+    .home.button .btn {
+        display: block !important;
+    }
+
+    .content-image img{
+        height: 100% !important;
+    }
+
+}
+
+/* ? Media Queries end */
 
 /* ! Home end */
