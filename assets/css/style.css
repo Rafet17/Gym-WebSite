@@ -43,7 +43,7 @@ section {
 }
 
 section h2 {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 4rem;
 }
 
@@ -538,27 +538,140 @@ nav {
     }
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:900px) {
     .gallery .wrapper {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
 
-    .gallery h2{
-        font-size: 3.8rem;
+    .gallery h2 {
+        font-size: 3rem;
     }
 
-    .gallery .divider{
+    .gallery .divider {
         display: none;
     }
 
-    .gallery.container{
+    .gallery.container {
         padding: 0 2rem;
     }
-    
+
 }
 
 /* ? Media Queries end */
 
 
 /* ! Gallery end */
+
+/* ! Pricing start */
+
+.pricing {
+    padding-top: 10rem;
+    color: var(--bs-white);
+}
+
+.pricing h2 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.pricing .content-text p {
+    margin: 5px 0 15px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+}
+
+.pricing .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.pricing .pricing-tablet {
+    border: 2px solid var(--bs-green);
+    padding: 3rem;
+}
+
+.pricing-tablet .head-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-tablet h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.pricing-tablet .head-title p {
+    margin: 5px 0 25px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+.pricing-tablet .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pricing-tablet .details li {
+    display: flex;
+    gap: 0.3rem;
+    font-size: 1.3rem;
+}
+
+.pricing-tablet .details i {
+    color: var(--bs-green);
+    padding-right: 1rem;
+    font-weight: 900;
+}
+
+.pricing .pricing-tablet .price {
+    padding-top: 2rem;
+}
+
+.pricing .pricing-tablet .price span {
+    padding-top: 10px;
+}
+
+.pricing .pricing-tablet .price h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* ? Media Queries start */
+
+/* @media screen and (max-width:1330px) {
+    .pricing .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pricing .wrapper .content-text {
+        grid-column: 1 / span 2;
+    }
+} */
+
+@media screen and (max-width:900px){
+    .pricing .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing.container{
+        padding: 2rem 2rem;
+    }
+}
+
+/* ? Media Queries end */
+
+
+/* ! Pricing end */
