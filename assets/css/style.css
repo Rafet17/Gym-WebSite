@@ -661,12 +661,12 @@ nav {
     }
 } */
 
-@media screen and (max-width:900px){
+@media screen and (max-width:900px) {
     .pricing .wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .pricing.container{
+    .pricing.container {
         padding: 2rem 2rem;
     }
 }
@@ -675,3 +675,127 @@ nav {
 
 
 /* ! Pricing end */
+
+/* ! Contact us start */
+
+.contact-us {
+    padding-top: 10rem;
+    color: #fff;
+}
+
+.contact-us .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 4rem;
+}
+
+.contact-us .contact h2 {
+    margin: 0;
+    padding-bottom: 2rem;
+    color: var(--bs-white);
+    font-size: 3.8rem;
+    text-transform: uppercase;
+}
+
+.contact-us .contact p {
+    font-size: 1.4rem;
+    margin: 5px 0 15px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+
+.contact-us .contact .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us .contact .info {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 2rem;
+}
+
+.contact-us .contact .info i {
+    font-size: 2rem;
+    background: var(--bs-green);
+    padding: 0.5rem 1.2rem;
+    color: var(--bs-bg);
+}
+
+.contact-us .contact .info h5 {
+    color: var(--bs-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-us .work-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--bs-green);
+    padding: 1rem;
+}
+
+.contact-us .work-time .border {
+    border: 7px solid var(--bs-bg);
+    padding: 8rem 13rem;
+}
+
+.contact-us .work-time h3 {
+    font-size: 3rem;
+    color: var(--bs-bg);
+}
+
+.contact-us .work-time span {
+    color: var(--bs-bg);
+    font-size: 1.8rem;
+}
+
+.contact-us .work-time .sunday {
+    padding-top: 2rem;
+}
+
+
+/* ? Media Queries start */
+
+@media screen and (max-width:1753px) {
+    .contact-us .work-time .border {
+        border: 7px solid var(--bs-bg);
+        padding: 8rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .contact-us.container {
+        padding: 2rem;
+    }
+
+    .contact-us .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-us .work-time h3 {
+        font-size: 2rem;
+    }
+
+    .contact-us .work-time span {
+        font-size: 1.1rem;
+    }
+
+    .contact-us .work-time .border {
+        border: 7px solid var(--bs-bg);
+        padding: 3rem;
+    }
+}
+
+
+
+/* ? Media Queries end */
+
+
+/* ! Contact us end */
