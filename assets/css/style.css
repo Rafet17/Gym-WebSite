@@ -885,3 +885,65 @@ nav {
 
 
 /* ! Testimonials end */
+
+/* ! Footer start */
+
+footer{
+    margin-top: 10rem;
+    padding: 35px 0 35px;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--bs-green);
+    color: var(--bs-bg);
+}
+
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .wrapper ul{
+    display: flex;
+    gap: 1rem;
+}
+
+footer .wrapper ul a{
+    font-size: 1.7rem;
+}
+
+/* ? Media Queries start*/
+
+@media screen and (max-width:900px){
+    footer{
+        margin-top: 3rem;
+    }
+
+    footer.container{
+        padding: 2rem 3rem;
+    }
+
+    footer .wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .wrapper ul {
+        gap: 0.5rem;
+    }
+
+    footer .wrapper ul a {
+        font-size: 1.5rem;
+    }
+
+    footer .wrapper span{
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+}
+
+/* ? Media Queries end */
+
+
+/* ! Footer end */
