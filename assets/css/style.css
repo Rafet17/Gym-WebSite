@@ -457,7 +457,7 @@ nav {
 
 @media screen and (max-width:1425px) {
 
-    
+
 
     .about h2 {
         font-size: 3.5rem;
@@ -488,3 +488,77 @@ nav {
 
 
 /* ! About end */
+
+/* ! Gallery start */
+
+.gallery {
+    padding-top: 10rem;
+}
+
+.gallery h2 {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 25px;
+    background: var(--bs-bg);
+    display: inline-block;
+    font-size: 4rem;
+    color: var(--bs-white);
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.gallery .divider {
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background: var(--bs-green);
+    top: -136px;
+}
+
+.gallery .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.gallery .gallery-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ? Media Queries start */
+
+@media screen and (max-width:1425px) {
+
+    .gallery .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:900px){
+    .gallery .wrapper {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .gallery h2{
+        font-size: 3.8rem;
+    }
+
+    .gallery .divider{
+        display: none;
+    }
+
+    .gallery.container{
+        padding: 0 2rem;
+    }
+    
+}
+
+/* ? Media Queries end */
+
+
+/* ! Gallery end */
