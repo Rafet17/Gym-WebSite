@@ -799,3 +799,89 @@ nav {
 
 
 /* ! Contact us end */
+
+/* ! Testimonials start */
+
+.testimonials {
+    color: var(--bs-white);
+    padding-top: 10rem;
+}
+
+.testimonials .wrapper .content {
+    text-align: center;
+    padding: 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonials .wrapper .content p {
+    font-size: 1.4rem;
+    margin: 5px 0 15px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #ddd;
+}
+
+.testimonials .wrapper .content h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    color: var(--bs-white);
+}
+
+.testimonials .wrapper .content span {
+    font-size: 1.3rem;
+    color: #ddd;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--bs-green);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 2rem;
+    height: 2rem;
+    background-size: 2rem 2rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2.8rem;
+}
+
+/* ? Media Queries start */
+
+@media screen and (max-width:900px) {
+    .testimonials.container {
+        padding: 2rem;
+    }
+
+    .testimonials .wrapper .content p {
+        font-size: 1.1rem;
+        line-height: 18px;
+    }
+
+    .testimonials .wrapper .content h5 {
+        font-size: 1.3rem;
+    }
+
+    .testimonials .wrapper .content span {
+        font-size: 1.1rem;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 1.8rem;
+    }
+
+}
+
+
+
+/* ? Media Queries end */
+
+
+/* ! Testimonials end */
