@@ -1,3 +1,5 @@
+
+
 /* ! Base Css start */
 * {
     margin: 0;
@@ -14,6 +16,7 @@
     --bs-white: #fff;
     --bs-black: #090909;
     --bs-bg: #000000;
+    --bs-gray: #ddd;
 
     --container-width-lg: 76%;
     --container-width-md: 96%;
@@ -24,6 +27,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -31,6 +35,7 @@ body {
     line-height: 1.7;
     color: var(--color-white);
     background: var(--bs-bg);
+    overflow-x: hidden;
 }
 
 .container {
@@ -215,7 +220,11 @@ nav {
     }
 
     nav {
-        border-bottom: none;
+        border-bottom: var(--bs-bg);
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
 
@@ -313,7 +322,7 @@ nav {
 }
 
 .home .content-text p {
-    color: var(--bs-white);
+    color: var(--bs-gray);
     margin: 5px 0 15px;
     line-height: 28px;
     letter-spacing: 0.5px;
@@ -443,6 +452,7 @@ nav {
 /* ? Media Queries start*/
 
 @media screen and (max-width:1885px) {
+
     .about h2 {
         color: var(--bs-white);
         font-size: 3.8rem;
@@ -567,12 +577,12 @@ nav {
 
 .pricing {
     padding-top: 10rem;
-    color: var(--bs-white);
 }
 
 .pricing h2 {
     margin: 0;
     font-size: 4rem;
+    color: var(--bs-white);
 }
 
 .pricing .content-text p {
@@ -580,6 +590,7 @@ nav {
     line-height: 28px;
     letter-spacing: 0.5px;
     font-size: 1.3rem;
+    color: var(--bs-gray);
 }
 
 .pricing .wrapper {
@@ -602,6 +613,7 @@ nav {
     font-size: 2rem;
     text-transform: uppercase;
     display: inline-block;
+    color: var(--bs-white);
 }
 
 .pricing-tablet .head-title p {
@@ -610,6 +622,7 @@ nav {
     letter-spacing: 0.5px;
     font-size: 1.3rem;
     display: inline-block;
+    color: var(--bs-gray);
 }
 
 .pricing-tablet .details {
@@ -622,6 +635,7 @@ nav {
     display: flex;
     gap: 0.3rem;
     font-size: 1.3rem;
+    color: var(--bs-gray);
 }
 
 .pricing-tablet .details i {
@@ -680,7 +694,6 @@ nav {
 
 .contact-us {
     padding-top: 10rem;
-    color: #fff;
 }
 
 .contact-us .wrapper {
@@ -703,6 +716,7 @@ nav {
     margin: 5px 0 15px;
     line-height: 28px;
     letter-spacing: 0.5px;
+    color: var(--bs-gray);
 }
 
 .contact-us .contact .contact-info {
@@ -729,6 +743,10 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.contact-us .contact .info span {
+    color: var(--bs-gray);
 }
 
 .contact-us .work-time {
@@ -888,7 +906,7 @@ nav {
 
 /* ! Footer start */
 
-footer{
+footer {
     margin-top: 10rem;
     padding: 35px 0 35px;
     font-size: 16px;
@@ -897,28 +915,28 @@ footer{
     color: var(--bs-bg);
 }
 
-footer .wrapper{
+footer .wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-footer .wrapper ul{
+footer .wrapper ul {
     display: flex;
     gap: 1rem;
 }
 
-footer .wrapper ul a{
+footer .wrapper ul a {
     font-size: 1.7rem;
 }
 
 /* ? Media Queries start*/
 
-@media screen and (max-width:900px){
-    footer{
+@media screen and (max-width:900px) {
+    footer {
         margin-top: 3rem;
     }
 
-    footer.container{
+    footer.container {
         padding: 2rem 3rem;
     }
 
@@ -936,7 +954,7 @@ footer .wrapper ul a{
         font-size: 1.5rem;
     }
 
-    footer .wrapper span{
+    footer .wrapper span {
         margin: 0;
         padding: 0;
         white-space: nowrap;
@@ -947,3 +965,5 @@ footer .wrapper ul a{
 
 
 /* ! Footer end */
+
+
